@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_red_light"
+    tools:context="com.example.sena.calculadora.Financiera">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="16dp"
+        android:text="Valor del vehìculo:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="@android:color/secondary_text_light"
+        android:id="@+id/valorVehiculo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El valor de la cuota inicial no puede ser mayor al valor del vehículo."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="16dp"
+        android:text="Cuota inicial ($):"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="@android:color/secondary_text_light"
+        android:id="@+id/cuotaInicial" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="16dp"
+        android:text="Crèdito:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="@android:color/secondary_text_light"
+        android:id="@+id/credito" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La tasa debe estar entre 0% hasta cerca de 2,19%. Una cifra más alta está por encima de la tasa de usura."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="16dp"
+        android:text="Tasa de interès mensual (%)($):"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="@android:color/secondary_text_light"
+        android:id="@+id/tasaInteres" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="16dp"
+        android:text="Plazo en años:"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plazo"
+        android:textColor="@android:color/secondary_text_light"
+        android:entries="@array/plazos">
+    </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:id="@+id/calcular"
+        android:onClick="calculo"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="30dp"
+        android:text="CALCULAR"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResultado"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="16dp"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
+
+</LinearLayout>

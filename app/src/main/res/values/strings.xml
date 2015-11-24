@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="signoSuma">+</string>
+    <string name="signoResta">-</string>
+    <string name="signoMultiplicacion">x</string>
+    <string name="signoDivision">/</string>
+    <string name="title_activity_lanzador">Lanzador</string>
+    <string name="title_activity_financiera">Financiera</string>
+    
+    <string-array name="plazos">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
